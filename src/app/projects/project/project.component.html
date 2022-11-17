@@ -1,0 +1,18 @@
+<section class="grid">
+  <div class="img" [ngStyle]="{'background-image': 'url(' + project.projectImage + ')'}"></div>
+  <aside>
+    <ul>
+      <li *ngFor="let stack of project.projectStack">#{{stack}}</li>
+    </ul>
+    <h5>{{project.projectName}}</h5>
+    <article>{{project.projectDescription}}</article>
+    <div class="flex">
+      <a [href]="project.projectDemo" target="_BLANK">
+        <button class="button--demo">Demo</button>
+      </a>
+      <a [href]="project.projectRepo">
+        <button class="button--code">Code</button>
+      </a>
+    </div>
+  </aside>
+</section>

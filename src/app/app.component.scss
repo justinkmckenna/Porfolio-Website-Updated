@@ -1,0 +1,91 @@
+@import "variabels";
+
+body{
+  background-color: $grey1;
+}
+
+.grid{
+  display: grid;
+  grid-template-areas:
+    "bio bio fe be"
+    "bio bio projects projects"
+    "bio bio projects projects"
+    "experience experience projects projects"
+    "experience experience projects projects"
+    "hobbies blogs blogs blogs"
+    "footer footer footer footer";
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  padding: 1.5rem;
+  @media only screen and (max-width: $larger) {
+    grid-template-areas:
+    "bio bio experience experience"
+    "fe fe be be"
+    "projects projects projects projects"
+    "projects projects projects projects"
+    "hobbies blogs blogs blogs"
+    "hoobies blogs blogs blogs"
+    "footer footer footer footer";
+  }
+  @media only screen and (max-width: $medium) {
+    grid-template-areas:
+    "bio bio bio bio"
+    "fe fe be be"
+    "experience experience experience experience"
+    "projects projects projects projects"
+    "projects projects projects projects"
+    "hobbies hobbies blogs blogs"
+    "hoobies hoobies blogs blogs"
+    "footer footer footer footer";
+  }
+  @media only screen and (max-width: $small) {
+    grid-template-areas:
+    "bio bio bio bio"
+    "bio bio bio bio"
+    "fe fe fe fe"
+    "be be be be"
+    "experience experience experience experience"
+    "projects projects projects projects"
+    "projects projects projects projects"
+    "hobbies hobbies hobbies hobbies"
+    "blogs blogs blogs blogs"
+    "footer footer footer footer";
+  }
+}
+
+.biography-area{
+  grid-area: bio;
+}
+
+.fe-skill-area{
+  grid-area: fe;
+}
+
+.be-skill-area{
+  grid-area: be;
+}
+
+.experience-area{
+  grid-area: experience;
+}
+
+.projects-area{
+  grid-area: projects;
+}
+.hobbies-area{
+  grid-area: hobbies;
+}
+.footer-area{
+  grid-area: footer;
+}
+
+.blogs-area{
+  grid-area: blogs;
+}
+
+.component-default-styling{
+  background-color: $white1;
+  border-radius: $component-bradius;
+  padding: $component-padding;
+}

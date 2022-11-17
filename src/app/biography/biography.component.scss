@@ -1,0 +1,79 @@
+@import "../variabels";
+@import "../fonts";
+
+$img-height:15rem;
+
+section{
+  background-color: $white1;
+  border-radius: $component-bradius;
+  padding: $component-padding;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h5{
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+h6{
+  margin:0;
+  font-weight: 400;
+  font-size: 1rem;
+  color: $grey3;
+  padding-bottom: 1rem;
+
+}
+
+article{
+  color: $grey3;
+  font-size: 0.9rem;
+  margin-top: 1.2rem;
+}
+
+.img{
+  background-image: url("../../assets/person.png");
+  background-repeat: no-repeat;
+  background-position: 48% 76%;
+  background-size: 500px;
+  height: $img-height;
+  border-radius: 1rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+
+  p {
+    color: $grey2;
+    margin: 0;
+    font-size: 0.9rem;
+    padding-left: 0.5rem;
+  }
+
+  i {
+    color: $grey2;
+  }
+
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media only screen and (max-width: $medium) {
+    grid-template-columns: $img-height 1fr;
+  }
+
+  @media only screen and (max-width: $small) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.biography{
+  @media only screen and (max-width: $medium) {
+    padding-left: $component-padding;
+  }
+}
