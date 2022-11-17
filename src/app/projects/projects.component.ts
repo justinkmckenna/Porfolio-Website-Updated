@@ -28,7 +28,7 @@ export class ProjectsComponent implements OnInit {
     {
       projectName: 'Web Scraper',
       projectDescription: 'This program scrapes the social media site VK. The program logs in, scrolls through the news feed, and grabs all words in every post. It then outputs the word count and 10 most used words in english.',
-      projectStack: ['Python', 'Selenium', 'GoogleTranslateAPI'],
+      projectStack: ['Python', 'Selenium'],
       projectDemo: 'https://www.youtube.com/embed/6jE3JbdOLdc',
       projectRepo: 'https://github.com/justinkmckenna/Web-Scraper',
       projectImage: 'assets/web-scraper.png'
