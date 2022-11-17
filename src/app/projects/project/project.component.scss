@@ -18,10 +18,12 @@ $image-column-size: 15rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 1rem;
+  border-radius: $component-bradius;
+  height: 15rem;
   @media only screen and (max-width: $small) {
-    background-size: cover;
-    background-position: center;
+    height: 9rem;
+    margin-bottom: 1.5rem;
+    width: 20rem;
   }
 }
 
